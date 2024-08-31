@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Make a request to the backend
-    fetch('http://localhost:4001/api/test')
+    fetch('http://localhost:4001/api/workouts/')
       .then(response => response.json())
       .then(data => {
         setMessage(data.message); // Update state with the message from the server
